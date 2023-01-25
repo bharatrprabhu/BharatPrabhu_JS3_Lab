@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bharat's Weather App</title>
+<link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<body>
+	<section class="top-banner">
+		<div class="container">
+			<h1 class="heading">Bharat's Weather App</h1>
+			<form>
+				<input type="text" placeholder="Search for a city" autofocus>
+				<button type="submit">SUBMIT</button>
+				<span class="msg"></span>
+			</form>
+		</div>
+	</section>
+	<section class="ajax-section">
+		<div class="container">
+			<ul class="cities">
+				<li class="city">
+			</ul>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container"></div>
+	</footer>
+	<script type="text/javascript">
+
+
+const form = document.querySelector(".top-banner form");
+const input = document.querySelector(".top-banner input");
+const displayCity = document.querySelector(".ajax-section div");
+const city= document.querySelector(".ajax-section .city");
+const msg = document.querySelector(".top-banner .msg");
+
+const apiKey = "163ff851587fa980155740ac7ff0ff4f";
+
+</script>
+<script src="weather.js"></script>
+</body>
+</html>
